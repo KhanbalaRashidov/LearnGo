@@ -11,4 +11,10 @@ func main() {
 
 	fmt.Println("Sum=", sum)
 	fmt.Println(name)
+
+	text := `Hello`
+	fmt.Println(text)
+
+	text2 := 'Z'
+	fmt.Println(text2)
 }

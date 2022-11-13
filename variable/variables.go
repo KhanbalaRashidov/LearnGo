@@ -4,6 +4,14 @@ import (
 	"fmt"
 )
 
+const PI = 3.14
+
+var appInfo = "Go Application"
+var (
+	app     = "Go App"
+	version = "1.19.2"
+)
+
 func main() {
 
 	//string type start
@@ -58,5 +66,17 @@ func main() {
 	//short declaration
 	number, str2, check3 := 25, "test", false
 	fmt.Println(number, str2, check3)
+
+	//float32
+	var myFloat32 float32 = 25.
+	fmt.Println(myFloat32)
+
+	var myComplex = complex(3, 4)
+
+	fmt.Println(myComplex)
+
+	fmt.Println("PI:", PI)
+
+	fmt.Println(app, version)
 
 }
