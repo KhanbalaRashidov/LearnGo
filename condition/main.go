@@ -39,7 +39,5 @@ func main() {
 		fmt.Println("A")
 	}
 
-	var runeNum rune = 32
-	fmt.Println(runeNum)
 	//end
 }

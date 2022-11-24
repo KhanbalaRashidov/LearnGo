@@ -8,7 +8,5 @@ const (
 )
 
 func main() {
-
 	fmt.Println(number1, number2)
-
 }
