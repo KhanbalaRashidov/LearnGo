@@ -17,7 +17,6 @@ func main() {
 	} else {
 		fmt.Println("number1 is less than numbur2")
 	}
-
 	// end
 
 	//switch statement start

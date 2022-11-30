@@ -23,5 +23,5 @@ func main() {
 	for index, color := range person.favColors {
 		fmt.Println(index, color)
 	}
-	score := 0
+	score := 0     
 }

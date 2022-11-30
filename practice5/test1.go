@@ -13,7 +13,7 @@ func main() {
 	person := Person{
 		firstName:  "Khanbala",
 		lastName:   "Rashidov",
-		favFlavors: []string{"chocolate", "vanilia"},
+		favFlavors: []string{"chocolate", "vanilla"},
 	}
 
 	fmt.Println(person.firstName)

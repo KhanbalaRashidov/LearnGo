@@ -34,6 +34,4 @@ func main() {
 		fmt.Printf("%v \n", element)
 	}
 
-	s := []string{1: "hello", 2: "Eio"}
-	fmt.Println(s)
 }
