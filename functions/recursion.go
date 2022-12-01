@@ -10,6 +10,9 @@ func main() {
 	fmt.Println(fact)
 	fib := fibonacci(25)
 	fmt.Println(fib)
+
+	factLoop := factorialLoop(25)
+	fmt.Println(factLoop)
 }
 
 func factorial(n int) int {
@@ -24,4 +27,12 @@ func fibonacci(n int) int {
 		return n
 	}
 	return fibonacci(n-1) + fibonacci(n-2)
+}
+
+func factorialLoop(n int) int {
+	multiply := 1
+	for ; n > 0; n-- {
+		multiply *= n
+	}
+	return multiply
 }
