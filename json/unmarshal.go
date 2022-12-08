@@ -23,7 +23,7 @@ func main() {
 		fmt.Println(err)
 	}
 	fmt.Println(person)
-
+	//Custom Method
 	person.Deserializer(jsonData)
 
 }
