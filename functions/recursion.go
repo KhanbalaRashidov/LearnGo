@@ -13,7 +13,7 @@ func main() {
 
 	factLoop := factorialLoop(25)
 	fmt.Println(factLoop)
-	fmt.Println(Fib3(24, make([]int, 26)))
+	fmt.Println(Fib3(25, make([]int, 26)))
 }
 
 func factorial(n int) int {
