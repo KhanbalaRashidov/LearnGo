@@ -7,27 +7,22 @@ import (
 )
 
 func main() {
-	fmt.Println("CPUs:", runtime.NumCPU())
-	fmt.Println("Goroutines:", runtime.NumGoroutine())
-
-	counter := 0
-
-	const gs = 100
 	var wg sync.WaitGroup
+
+	incrementer := 0
+	gs := 100
 	wg.Add(gs)
 
 	for i := 0; i < gs; i++ {
 		go func() {
-			v := counter
-			// time.Sleep(time.Second)
+			v := incrementer
 			runtime.Gosched()
 			v++
-			counter = v
+			incrementer = v
+			fmt.Println(incrementer)
 			wg.Done()
 		}()
-		fmt.Println("Goroutines:", runtime.NumGoroutine())
 	}
 	wg.Wait()
-	fmt.Println("Goroutines:", runtime.NumGoroutine())
-	fmt.Println("count:", counter)
+	fmt.Println("end value:", incrementer)
 }
